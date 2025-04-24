@@ -1,10 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+// src/main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 import './index.css'
-import App from './App.jsx'
+import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import { ThemeProvider, useTheme } from './context/ThemeContext'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+const ThemeWrapper = () => {
+  const { theme } = useTheme()
+  return (
+    <StyledThemeProvider theme={theme}>
+      <App />
+    </StyledThemeProvider>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ThemeProvider>
+      <ThemeWrapper />
+    </ThemeProvider>
+  </React.StrictMode>
 )
