@@ -1,19 +1,106 @@
-import styled from 'styled-components'
-import ThemeToggleButton from '../components/ThemeToggleButton'
+import styled from "styled-components";
+import ThemeToggleButton from "../components/ThemeToggleButton";
 
-
-const Caixa = styled.div`
+// Estilização
+const Container = styled.div`
   background-color: ${(p) => p.theme.colors.background};
   color: ${(p) => p.theme.colors.text};
-  padding: 2rem;
-  border-radius: 1rem;
-`
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Header = styled.header`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+`;
+
+
+const Title = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+  color: ${(p) => p.theme.colors.accent};
+`;
+
+const Description = styled.p`
+  max-width: 600px;
+  margin: 1rem 0 2rem;
+  text-align: center;
+  color: ${(p) => p.theme.colors.textSecondary};
+  font-size: 1.1rem;
+`;
+
+const Features = styled.div`
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+`;
+
+const FeatureCard = styled.div`
+  background-color: ${(p) => p.theme.colors.card};
+  border: 1px solid ${(p) => p.theme.colors.border};
+  border-radius: ${(p) => p.theme.radius.card};
+  padding: 1.5rem;
+  box-shadow: 0 0 10px ${(p) => p.theme.colors.shadow};
+`;
+
+const FeatureTitle = styled.h3`
+  color: ${(p) => p.theme.colors.accent};
+  margin-bottom: 0.5rem;
+`;
+
+const FeatureText = styled.p`
+  color: ${(p) => p.theme.colors.textSecondary};
+  font-size: 0.95rem;
+`;
 
 export default function Home() {
   return (
-    <Caixa>
+    <Container>
       <ThemeToggleButton />
-      <h1 className="text-2xl font-bold">Bem-vindo ao chat da FÚRIA!</h1>
-    </Caixa>
-  )
+      <Header>
+        <img
+          src="src\assets\furiaLogo.png"
+          alt="FURIA Logo"
+          width="60"
+          height="60"
+        />
+        <Title>Bem-vindo ao chat da FÚRIA!</Title>
+      </Header>
+      <Description>
+        Aqui, você pode conversar com nosso bot para tirar dúvidas, receber
+        atualizações e viver a experiência FÚRIA com estilo e rapidez.
+      </Description>
+      <Features>
+        <FeatureCard>
+          <FeatureTitle>🤖 Respostas Instantâneas</FeatureTitle>
+          <FeatureText>
+            Tire dúvidas sobre jogos, horários, eventos ou curiosidades do
+            universo FURIA.
+          </FeatureText>
+        </FeatureCard>
+        <FeatureCard>
+          <FeatureTitle>📰 Últimas Notícias</FeatureTitle>
+          <FeatureText>
+            Fique por dentro dos próximos confrontos e novidades do time em
+            tempo real.
+          </FeatureText>
+        </FeatureCard>
+        <FeatureCard>
+          <FeatureTitle>🎮 Integração com Discord</FeatureTitle>
+          <FeatureText>
+            Conecte-se diretamente com a comunidade usando comandos rápidos.
+          </FeatureText>
+        </FeatureCard>
+      </Features>
+    </Container>
+  );
 }
