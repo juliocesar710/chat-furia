@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Container da mensagem
 const Container = styled.div`
   background: ${(p) =>
     p.isUser ? "linear-gradient(135deg, #ff4655, #e53947)" : p.theme.colors.card};
@@ -11,8 +12,7 @@ const Container = styled.div`
   align-self: ${(p) => (p.isUser ? "flex-end" : "flex-start")};
   word-break: break-word;
   box-shadow: 0 4px 12px ${(p) => (p.isUser ? "rgba(255, 70, 85, 0.5)" : p.theme.colors.shadow)};
-  border: 1px solid
-    ${(p) => (p.isUser ? "#ff465577" : p.theme.colors.border)};
+  border: 1px solid ${(p) => (p.isUser ? "#ff465577" : p.theme.colors.border)};
   transition: transform 0.2s ease;
   font-family: ${(p) => p.theme.font.family};
 
@@ -22,17 +22,44 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  max-width: 50%;
   border-radius: ${(p) => p.theme.radius.card};
   margin-top: 0.75rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff4655;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
+
+function formatText(text) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, i) =>
+    urlRegex.test(part) ? (
+      <a
+        key={i}
+        href={part}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#ff4655", textDecoration: "underline" }}
+      >
+        {part}
+      </a>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
 
 export default function Message({ text, isUser, data }) {
   return (
     <Container isUser={isUser}>
-      {text}
-      {data?.imagem && <Image src={data.imagem} alt="Resposta" />}
+      {formatText(text)}
+      {data?.image && <Image src={data.image} alt="Resposta" />}
       {data?.footer && <p>{data.footer}</p>}
     </Container>
   );

@@ -41,7 +41,7 @@ const Input = styled.input`
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid ${(p) => p.theme.colors.border};
-  background-color: ${(p) => p.theme.colors.input || "#f0f0f0"};
+  background-color: ${(p) => p.theme.colors.inputBackground || "#f0f0f0"};
   color: ${(p) => p.theme.colors.text};
   font-size: 1rem;
 `;
