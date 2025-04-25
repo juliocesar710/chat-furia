@@ -1,0 +1,13 @@
+{
+  "jogadores": {
+    "response": "👥 Elenco da FURIA\n\n🔫 CS2:\n- FalleN \n- yuurih\n- KSCERATO \n- MOLODOY \n- YEKINDAR \n\n\n Acesse: https://draft5.gg/equipe/330-FURIA",
+    "link": "https://draft5.gg/equipe/330-FURIA",
+    "quickReplies": ["/fotos_cs2", "/fotos_valorant"],
+    "footer": "Escolha uma equipe para ver mais"
+  },
+  "fotos_cs2": {
+    "response": "📸 Jogadores de CS2 da FURIA",
+    "image": "https://assets.gamearena.gg/wp-content/uploads/2023/10/24170654/20230903_Adela-Sznajder_EPL18_14658.jpg",
+    "footer": "Digite '/jogadores' para voltar"
+  }
+}

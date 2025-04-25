@@ -1,0 +1,18 @@
+{
+  "community": {
+    "response": "💜 Comunidade FURIA\n\n- 👕 Loja oficial: camisetas, bonés e mais!\n- 📸 Fanarts e Cosplays da galera\n- 🗣️ Grupos de discussão e eventos\n- 🎤 Podcast da FURIA: bastidores e histórias",
+    "image": "https://emtodolugar.facha.edu.br/wp-content/uploads/2021/04/furia-esports.jpg?w=1280&h=720&crop=1",
+    "footer": "Participe da comunidade! FURIA é mais que jogo."
+  },
+  "loja": {
+    "response": "🛍️ Loja Oficial FURIA\n\n- Camiseta Oficial 2024\n- Moletom Edição Limitada\n- Boné Preto Clássico\n\nVisite: https://www.furia.gg"
+  },
+  "fanarts": {
+    "response": "🎨 Fanarts da galera:\n\n- @artedafuria: 'FalleN em chamas'\n- @furianation: 'Arte de campeonato'\n\nCompartilhe a sua com #FURIAArt",
+    "image":"https://mir-s3-cdn-cf.behance.net/projects/404/fa70c8169487327.Y3JvcCwzMDAwLDIzNDYsMCw1MzQ.png"
+  },
+  "eventos": {
+    "response": "📅 Próximos eventos da comunidade:\n\n- 28/04: Encontro FURIA em SP\n- 04/05: Live com o CEO + sorteio\n- 10/05: Torneio amador de CS2",
+    "footer": "Fique ligado nas redes sociais!"
+  }
+}
