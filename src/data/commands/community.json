@@ -1,0 +1,27 @@
+{
+    "community": {
+      "response": "💜 Comunidade FURIA\n\n- 👕 Loja oficial: camisetas, bonés e mais!\n- 📸 Fanarts e Cosplays da galera\n- 🗣️ Grupos de discussão e eventos\n- 🎤 Podcast da FURIA: bastidores e histórias",
+      "quickReplies": ["/loja", "/fanarts", "/podcast", "/eventos"],
+      "image": "https://exemplo.com/comunidade.jpg",
+      "footer": "Participe da comunidade! FURIA é mais que jogo."
+    },
+    "loja": {
+      "response": "🛍️ Loja Oficial FURIA\n\n- Camiseta Oficial 2024\n- Moletom Edição Limitada\n- Boné Preto Clássico\n\nVisite: https://loja.furia.gg",
+      "image": "https://exemplo.com/loja.jpg",
+      "footer": "Digite '/community' para voltar"
+    },
+    "fanarts": {
+      "response": "🎨 Fanarts da galera:\n\n- @artedafuria: 'FalleN em chamas'\n- @furianation: 'Arte de campeonato'\n\nCompartilhe a sua com #FURIAArt",
+      "image": "https://exemplo.com/fanart.jpg",
+      "footer": "Quer mais? Digite '/community'"
+    },
+    "podcast": {
+      "response": "🎧 Podcast da FURIA\n\nNovos episódios toda semana com convidados especiais.\n\nÚltimo episódio: 'A jornada até a IEM'\n\nOuça em: https://spotify.com/furia",
+      "footer": "Digite '/community' para voltar"
+    },
+    "eventos": {
+      "response": "📅 Próximos eventos da comunidade:\n\n- 28/04: Encontro FURIA em SP\n- 04/05: Live com o CEO + sorteio\n- 10/05: Torneio amador de CS2",
+      "footer": "Fique ligado nas redes sociais!"
+    }
+  }
+  

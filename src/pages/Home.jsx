@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ThemeToggleButton from "../components/ThemeToggleButton";
+import { Link } from "react-router-dom";
 
 // Estilização
 const Container = styled.div`
@@ -44,12 +45,19 @@ const Features = styled.div`
   margin-top: 2rem;
 `;
 
-const FeatureCard = styled.div`
+const FeatureCard = styled(Link)`
   background-color: ${(p) => p.theme.colors.card};
   border: 1px solid ${(p) => p.theme.colors.border};
   border-radius: ${(p) => p.theme.radius.card};
   padding: 1.5rem;
   box-shadow: 0 0 10px ${(p) => p.theme.colors.shadow};
+  text-decoration: none; // Remove o sublinhado do link
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 const FeatureTitle = styled.h3`
@@ -80,21 +88,21 @@ export default function Home() {
         atualizações e viver a experiência FÚRIA com estilo e rapidez.
       </Description>
       <Features>
-        <FeatureCard>
+        <FeatureCard to="/chat">
           <FeatureTitle>🤖 Respostas Instantâneas</FeatureTitle>
           <FeatureText>
             Tire dúvidas sobre jogos, horários, eventos ou curiosidades do
             universo FURIA.
           </FeatureText>
         </FeatureCard>
-        <FeatureCard>
+        <FeatureCard to="/chat">
           <FeatureTitle>📰 Últimas Notícias</FeatureTitle>
           <FeatureText>
             Fique por dentro dos próximos confrontos e novidades do time em
             tempo real.
           </FeatureText>
         </FeatureCard>
-        <FeatureCard>
+        <FeatureCard to="/chat">
           <FeatureTitle>🎮 Integração com Discord</FeatureTitle>
           <FeatureText>
             Conecte-se diretamente com a comunidade usando comandos rápidos.
