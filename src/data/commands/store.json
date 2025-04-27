@@ -1,6 +1,5 @@
 {
-    "produtos": {
-      "resposta": "🛍️ Itens mais vendidos:\n1. Camisa FURIA 2024 (R$ 249)\n2. Moletom Edição Limitada (R$ 399)\n\n🔗 Acesse: https://www.furia.gg",
-      "link": "https://www.furia.gg"
-    }
+  "loja": {
+    "response": "🛍️ Loja Oficial FURIA\n\n- Camiseta Oficial 2024\n- Moletom Edição Limitada\n- Boné Preto Clássico\n\nVisite: https://www.furia.gg"
   }
+}
