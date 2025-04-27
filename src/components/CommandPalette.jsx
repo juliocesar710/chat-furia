@@ -88,14 +88,29 @@ export default function CommandPalette({ isOpen, onClose, onCommandSelect }) {
       shortcut: "/jogadores"
     },
     {
-      title: "Notícias",
+      title: "Eventos",
       description: "Mostra as últimas notícias do time",
-      shortcut: "/noticias"
+      shortcut: "/eventos"
     },
     {
       title: "Loja",
       description: "Link para a loja oficial da FURIA",
       shortcut: "/loja"
+    },
+    {
+      title:"comunidade",
+      description: "A comunidade da FURIA",
+      shortcut: "/comunidade"
+    },
+    {
+      title: "fanarts",
+      description: "Fanarts da FURIA",
+      shortcut: "/fanarts"
+    },
+    {
+      title:"fotosCS2",
+      description: "Fotos do time do CS2",
+      shortcut: "/fotosCS2"
     }
   ];
 
